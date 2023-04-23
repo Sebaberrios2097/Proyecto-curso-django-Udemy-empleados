@@ -11,6 +11,7 @@ class EmpleadoAdmin(admin.ModelAdmin):
         'departamento',
         'job',
         'full_name',
+        'id'
     )
     def full_name(self, obj):
         return obj.first_name + ' ' + obj.last_name
